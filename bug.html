@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+  <script>
+    // Incorrect way to access an element's content
+    document.getElementById('myDiv').textContent = "This should be in the div";
+    //Using innerHTML is safer than textContent when you are dealing with user input 
+    document.getElementById("myDiv").innerHTML = "This is in the div";
+  </script>
+</body>
+</html>
